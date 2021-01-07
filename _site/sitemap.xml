@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://0.0.0.0:80/</loc></url>
+<url><loc>http://0.0.0.0:80/bash</loc></url>
+<url><loc>http://0.0.0.0:80/SLES-SAP/hana-scale-out-replication</loc></url>
+<url><loc>http://0.0.0.0:80/wip/intl-datetime</loc></url>
+<url><loc>http://0.0.0.0:80/wip/php</loc></url>
+<url><loc>http://0.0.0.0:80/assets/css/style.css</loc></url>
+<url><loc>http://0.0.0.0:80/redirects.json</loc></url>
+
+</urlset>
+

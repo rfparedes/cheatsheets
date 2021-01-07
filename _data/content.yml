@@ -1,0 +1,38 @@
+home:
+  title: "Rich's cheatsheets"
+  tagline: 
+
+top_nav:
+  title:
+  edit: Edit
+  edit_on_github: Edit this page on GitHub
+
+sheet:
+  suffix: cheatsheet
+
+social_list:
+
+related_posts_callout:
+  description: Over SIZE curated cheatsheets, by developers for developers.
+  link: Cheatsheets home
+
+related_posts_group:
+  top: Top cheatsheets
+  other: Other cheatsheets
+  category: Other CATEGORY cheatsheets
+
+search_form:
+  default_placeholder: Search SIZE+ cheatsheets
+  home_placeholder: Search...
+  prefix: 
+
+comments_area:
+  suffix: for this cheatsheet.
+  link: "Write yours!"
+
+not_found:
+  title: Not found
+  description: Sorry, we don't have a cheatsheet for this yet. Try searching!
+  home: Back to home
+
+announcement:

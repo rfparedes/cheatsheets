@@ -43,6 +43,9 @@ Show man page
 $ man kgr
 ```
 
+### How Does kGraft Work?
+![](images/kgraft1.png)
+
 
 ### Documentation
 {: .-intro}

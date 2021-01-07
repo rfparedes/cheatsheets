@@ -33,6 +33,17 @@
   "tags": ["WIP"],
   "updated": null
 },{
+  "id": "kgraft",
+  "title": "kGraft Live Patching for SLES12",
+  "url": "/kgraft",
+  "category": "Live-Patching",
+  "keywords": ["live Patching","SLES SAP","kgraft","kgr"],
+  "content_html": "<h3 id=\"kgr-tool---query-and-manipulate-kgraft-patching-status\">kgr Tool - query and manipulate kGraft patching status</h3>\n<p>Display the overall status of kGraft patching (ready or in_progress)</p>\n<pre><code class=\"language-bash\">$ kgr status\n## Example output\nready\n</code></pre>\n<p>Display the list of loaded kGraft patches</p>\n<pre><code class=\"language-bash\">$ kgr -v patches\n## Example Output\nkgraft_patch_1_8_5_1\n    active: 1\n    RPM: kgraft-patch-4_12_14-122_46-default-1-8.5.1.x86_64\n    CVE: (none - this is an initial kGraft patch)\n    bug fixes and enhancements: (none)\n</code></pre>\n\n<p>List processes that are preventing kGraft patching from finishing. \nBy default, only the PIDs are listed</p>\n<pre><code class=\"language-bash\">$ kgr -v blocking\n## Example Output\nno processes with kgr_in_progress set\n</code></pre>\n\n<p>Show man page</p>\n<pre><code class=\"language-bash\">$ man kgr\n</code></pre>\n\n<h3 class=\"-intro\" id=\"documentation\">Documentation</h3>\n<p>SUSE Documentation</p>\n<ul>\n  <li><a href=\"https://documentation.suse.com/sles/12-SP5/html/SLES-kgraft/index.html\">Live Kernel Patching Using kGraft</a> <em>(suse.com)</em></li>\n  <li><a href=\"https://www.suse.com/c/reboot-reloaded-patching-the-linux-kernel-online/\">Reboot Reloaded: Patching the Linux Kernel Online</a> <em>(suse.com)</em></li>\n  <li><a href=\"https://www.suse.com/media/presentation/slelp.pdf\">Live Patching Presentation</a> <em>(suse.com)</em></li>\n  <li><a href=\"https://www.suse.com/media/data-sheet/sle_live_patching_data_sheet.pdf\">Live Patching Data Sheet</a> <em>(suse.com)</em></li>\n</ul>",
+  "intro_html": "",
+  "description_html": "",
+  "tags": ["Featured"],
+  "updated": "2021-01-06"
+},{
   "id": "wip/php",
   "title": "PHP",
   "url": "/wip/php",

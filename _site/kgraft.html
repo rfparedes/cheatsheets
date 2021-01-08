@@ -87,11 +87,11 @@
 <!-- deferred css -->
 <script id='deferred-css'>;(function(links){(requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame||(function(fn){window.addEventListener('load',fn)}))(function(){var h=document.getElementsByTagName('head')[0],l,i;for (i=0;i<links.length;i++){l=document.createElement('link');l.rel='stylesheet';l.href=links[i];h.appendChild(l);}})})([
 'https://fonts.googleapis.com/css?family=Cousine',
-'./assets/2017/style.css?t=20210107221442'
+'./assets/2017/style.css?t=20210108030900'
 ])</script>
 <noscript id='deferred-css-fallback'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cousine'>
-<link rel='stylesheet' href='./assets/2017/style.css?t=20210107221442'>
+<link rel='stylesheet' href='./assets/2017/style.css?t=20210108030900'>
 </noscript>
 
 <script type='application/ld+json'>
@@ -210,6 +210,53 @@ no processes with kgr_in_progress set
 
 <h3 id="how-does-kgraft-work">How Does kGraft Work?</h3>
 <p><img src="/images/kgraft1.png" alt="" /></p>
+
+<h3 id="patch-lifecycle">Patch Lifecycle</h3>
+<p>Display expiration dates of live patches</p>
+<pre><code class="language-bash">$ zypper lifecycle
+
+## Example Output
+Product end of support
+Codestream: SUSE Linux Enterprise Server 12             2024-10-30
+    SUSE Linux Enterprise Server for SAP Applications 12 SP5 2024-10-30
+
+Extension end of support
+SUSE Linux Enterprise Live Patching                     2024-10-30
+
+kernel-default                           Now, installed 4.12.14-122.46.1, update available 4.12.14-122.54.1
+</code></pre>
+<p>Display if there are live patches available</p>
+<pre><code class="language-bash">$ zypper lifecycle | grep kgraft
+
+## Example Output showing an available update
+kgraft-patch-4_12_14-122_46-default      Now, installed 1-8.5.1, update available 2-2.1 2024-10-30
+</code></pre>
+
+<h3 id="installing-and-removing-patches">Installing and Removing Patches</h3>
+<p>Display Available kGraft Patch</p>
+<pre><code class="language-bash">$ zypper lp | grep -i 'Live Patch'
+
+### Example Output
+SLE-Live-Patching12-SP5-Updates for x86_64 SAP        | SUSE-SLE-Live-Patching-12-SP5-2020-3674    | security | important | ---         | needed | important: Security update for the Linux Kernel (Live Patch 11 for SLE 12 SP5)
+</code></pre>
+<p>Install kGraft Patch</p>
+<pre><code class="language-bash">$ zypper update -t patch &lt;PATCH_NAME&gt;
+
+### Example and Output
+$ zypper update -t patch SUSE-SLE-Live-Patching-12-SP5-2020-3674
+
+The following NEW patch is going to be installed:
+  SUSE-SLE-Live-Patching-12-SP5-2020-3674
+
+The following package is going to be upgraded:
+  kgraft-patch-4_12_14-122_46-default
+</code></pre>
+<p>Remove kGraft Patch</p>
+<pre><code class="language-bash">$ zypper rm kgraft-patch*
+
+## Reboot
+$ reboot
+</code></pre>
 
 <h3 class="-intro" id="documentation">Documentation</h3>
 <p>SUSE Documentation</p>
@@ -398,7 +445,7 @@ function n(n,t,e){n.addEventListener?n.addEventListener(t,e):n.attachEvent("on"+
 },{}],"eoMl":[function(require,module,exports) {
 "use strict";var e=u(require("./wrapify")),d=u(require("dom101/add-class")),t=u(require("dom101/on"));function u(e){return e&&e.__esModule?e:{default:e}}var a,o=document.querySelector("[data-js-main-body]");function r(){a||((0,d.default)(document.documentElement,"LoadDone"),a=!0)}o&&((0,e.default)(o),(0,d.default)(o,"-wrapified")),(0,t.default)(window,"load",r),setTimeout(r,5e3);
 },{"./wrapify":"hE9p","dom101/add-class":"G20n","dom101/on":"DJ2P"}]},{},["eoMl"], null)</script>
-<script src='./assets/packed/app.js?t=20210107221442'></script>
+<script src='./assets/packed/app.js?t=20210108030900'></script>
 
 
 

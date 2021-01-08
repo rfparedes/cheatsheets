@@ -1,1 +1,1 @@
-# rfparedes.github.io
+# cheatsheets.paredes.pw

@@ -33,6 +33,17 @@
   "tags": ["WIP","Featured"],
   "updated": "2021-01-08"
 },{
+  "id": "systemd",
+  "title": "systemd",
+  "url": "/systemd",
+  "category": "OS",
+  "keywords": ["systemd","linux"],
+  "content_html": "<h3 class=\"-prime\" id=\"timers\">Timers</h3>\n\n<table class=\"-headers\">\n  <thead>\n    <tr>\n      <th>Command</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><code>systemctl list-timers --all</code></td>\n      <td>List Existing Timers</td>\n    </tr>\n    <tr>\n      <td> </td>\n      <td> </td>\n    </tr>\n  </tbody>\n</table>",
+  "intro_html": "",
+  "description_html": "",
+  "tags": ["WIP","Featured"],
+  "updated": "2021-01-20"
+},{
   "id": "assets/css/style.css",
   "title": null,
   "url": "/assets/css/style.css",

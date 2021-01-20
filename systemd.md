@@ -1,6 +1,6 @@
 ---
 title: systemd
-category: OS
+category: CLI
 layout: 2017/sheet
 tags: [WIP, Featured]
 updated: 2021-01-20
